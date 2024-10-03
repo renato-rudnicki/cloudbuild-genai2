@@ -144,7 +144,8 @@ class vertex_ai_pipeline:
             template_path=self.yaml_file_path,
             pipeline_root=self.pipelineroot,
             # Replace encryption with the name of the kms key in the kms project of the non-prod folder and also de non-prod KMS project ID
-            encryption_spec_key_name='projects/prj-p-kms-u55r/locations/us-central1/keyRings/sample-keyring/cryptoKeys/prj-n-mlmachine-learning',
+            # wrond kms project -> encryption_spec_key_name='projects/prj-p-kms-u55r/locations/us-central1/keyRings/sample-keyring/cryptoKeys/prj-n-mlmachine-learning',
+            encryption_spec_key_name='projects/prj-n-kms-5fcc/locations/us-central1/keyRings/sample-keyring/cryptoKeys/prj-n-mlmachine-learning',
             parameter_values={
                 "create_bq_dataset_query": self.create_bq_dataset_query,
                 "bq_dataset": self.data_config['bq_dataset'],
