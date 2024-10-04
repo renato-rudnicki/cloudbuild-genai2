@@ -29,6 +29,7 @@ import os
 # from google.cloud import bigquery
 # from google.api_core.exceptions import GoogleAPIError
 # from typing import NamedTuple
+# just a comment
 
 
 class vertex_ai_pipeline:
